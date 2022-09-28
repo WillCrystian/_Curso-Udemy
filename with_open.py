@@ -17,4 +17,4 @@ if escrever_arquivo:
 else: 
     with open('./teste.json', 'r') as arquivo:
         p_jason = arquivo.read()
-        p = json.loads(p_jason) # convertendo para txt
+        p = json.loads(p_jason) # convertendo para dicionario
