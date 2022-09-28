@@ -1,0 +1,3 @@
+'w' escreve no inicio do arquivo
+'r' Le arquivo desde o inicio
+'r' Le arquivo desde o inicio
