@@ -32,15 +32,19 @@ corpo = MIMEText(corpo_msg, 'html')
 msg.attach(corpo)
 
 #enviando uma imagem em anexo
-with open('imagem.jpg', 'rb') as img:
-    img = MIMEImage(img.read())
-    msg.attach(img)
+#with open('imagem.jpg', 'rb') as img:
+#    img = MIMEImage(img.read())
+#    msg.attach(img)
 
 # enviar o e-mail
 with smtplib.SMTP(host='smtp-relay.gmail.com', port=587) as smtp:
-    smtp.ehlo()
-    smtp.starttls()
-    # e-mail e login de quem ta enviando
-    smtp.login('@gmail.com.br', 'senha')
-    smtp.send_message(msg)
-    print('E-mail enviado com sucesso.')
+    try:
+        smtp.ehlo()
+        smtp.starttls()
+        # e-mail e login de quem ta enviando
+        smtp.login('@gmail.com.br', 'senha')
+        smtp.send_message(msg)
+        print('E-mail enviado com sucesso.')
+    except Exception as e:
+        print('E-mail não foi possivel enviar.')
+        print('Erro:', e)
