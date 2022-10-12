@@ -11,21 +11,45 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Redimensionar imagem</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="1" column="0">
-     <widget class="QLineEdit" name="inputNomeArquivo"/>
-    </item>
-    <item row="1" column="1">
-     <widget class="QPushButton" name="btnEscolherImagem">
+    <item row="2" column="0">
+     <widget class="QLabel" name="labelLargura">
       <property name="text">
-       <string>Escolher Imagem</string>
+       <string>Largura</string>
       </property>
      </widget>
     </item>
-    <item row="0" column="0" colspan="2">
+    <item row="2" column="3">
+     <widget class="QLineEdit" name="inputAltura"/>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="inputLargura"/>
+    </item>
+    <item row="2" column="2">
+     <widget class="QLabel" name="labelAltura">
+      <property name="text">
+       <string>Altura</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="4">
+     <widget class="QPushButton" name="btnRedimensionar">
+      <property name="text">
+       <string>Redimensionar</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="4">
+     <widget class="QPushButton" name="btnSalvar">
+      <property name="text">
+       <string>Salvar</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="5">
      <widget class="QScrollArea" name="scrollArea">
       <property name="widgetResizable">
        <bool>true</bool>
@@ -36,12 +60,12 @@
          <x>0</x>
          <y>0</y>
          <width>494</width>
-         <height>388</height>
+         <height>330</height>
         </rect>
        </property>
        <layout class="QGridLayout" name="gridLayout_2">
         <item row="0" column="0">
-         <widget class="QLabel" name="label_img">
+         <widget class="QLabel" name="labelImg">
           <property name="text">
            <string/>
           </property>
@@ -50,6 +74,16 @@
        </layout>
       </widget>
      </widget>
+    </item>
+    <item row="1" column="4">
+     <widget class="QPushButton" name="btnEscolherImagem">
+      <property name="text">
+       <string>Escolher Imagem</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="4">
+     <widget class="QLineEdit" name="inputNomeArquivo"/>
     </item>
    </layout>
   </widget>
