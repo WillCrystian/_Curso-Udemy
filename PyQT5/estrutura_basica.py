@@ -5,6 +5,7 @@ class App(QMainWindow):
     def __init__(self, parent= None) -> None:
         super().__init__(parent)
         
+        
 if __name__ == '__main__':
     qt = QApplication(sys.argv)
     app = App()
