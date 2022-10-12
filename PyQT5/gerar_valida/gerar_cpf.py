@@ -30,4 +30,5 @@ def gera_cpf():
         
     novo_cpf = novo_cpf + str(segundo_digito)
 
+    novo_cpf = f'{novo_cpf[:3]}.{novo_cpf[3:6]}.{novo_cpf[6:9]}-{novo_cpf[9:]}'
     return novo_cpf
