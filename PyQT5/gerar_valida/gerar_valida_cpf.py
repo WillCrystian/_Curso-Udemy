@@ -1,3 +1,7 @@
+""" comando para converter arquivo do QT Designer em .py
+-> pyuic5 nome_do_projeto.ui -o nome_do_arquivo.py 
+"""
+
 from gerar_cpf import gera_cpf
 from valida_cpf import validar_cpf
 from designer import *
